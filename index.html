@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <title>My Portfolio</title>
+  </head>
+  <body>
+
+    <!--profile-->
+    <div id="container">
+        <image  id="myimage"  src="./main pic.jpg" width="50%">
+            <div id="container-text">
+                <div id="myname">PRATHAM BHATIA</div>
+                <p id="professions">Web Developer . Software Engineer</p>
+            </div>
+            <div id="main-buttons">
+                <button  class="container-buttons" id="Resume"><a href="./Pratham Bhatia.pdf" download target="_blank">Resume</a></button>
+                <button class="container-buttons" id="contact"><a href="#feedback-form">Contact Me</a></button>
+            </div>
+    </div>
+
+    <!--infographic-->
+    <div id="infographic">
+        <div id="flex-1">
+            <article id="about-me">
+                <h3 id="honesty-statement-heading">About Me and Academic Honesty</h3>
+                <p id="honesty-statement">
+                    I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.
+                </p>
+                
+                <strong id="about-me-date">Date: </strong><time id="honesty-time" datetime="2022-09-19"> August 19, 2022</time>
+            
+            </article>
+        </div>
+    <div id="flex-2">
+        <Table id="basic-info-table">
+            <caption id="table-head">
+                Basic Information
+            </caption>
+            <tbody id="table-body">   
+                <tr>
+                    <th>NAME:</th>
+                    <td>Pratham Bhatia</td>                 
+                </tr>                  
+                <tr>
+                    <th>AGE:</th>
+                    <td>20+</td>                 
+                </tr>
+                <tr>
+                    <th>EMAIL:</th>
+                    <td>pbhatia19@myseneca.ca</td>                
+                </tr>
+                <tr>
+                    <th>LANGUAGE:</th>
+                    <td>English, Hindi, Punjabi</td>                
+                </tr>
+                <tr>
+                    <th>COURSE:</th>
+                    <td>WEB222</td>                
+                </tr>
+                <tr>
+                    <th>CLASS SECTION:</th>
+                    <td>ZEE</td>                
+                </tr>
+                <tr>
+                    <th>STUDENT ID:</th>
+                    <td>156626210</td>                
+                </tr>
+                <tr>
+                    <th>INSTRUCTOR:</th>
+                    <td>Vatsal Shah</td>                
+                </tr>                
+            </tbody>
+        </Table>    
+    </div>
+
+    </div>
+
+    <!--education qualifications-->
+    <div id="education-container">
+            <h2 id="heading-education">Education</h2>
+
+            <div id="education"  class="education">
+
+                <div id="diploma" class="diploma">
+                    <p class="diploma-text">2022-2023 (expected)</p>
+                    <p>DIPLOMA</p>            
+                </div>                
+               
+                  <div id="diploma-details" class="diploma-details">
+                    <strong>COMPUTER PROGRAMMING</strong> <br>           
+                    <strong>SENECA COLLEGE</strong>
+                    <P>Worked in many different industrial projects <br>Awarded with many scholarships</P>
+                  </div>
+            </div>
+
+            <div id="education-2"  class="education">
+
+                <div id="diploma-2" class="diploma">
+                    <p class="diploma-text">2022-2023 (expected)</p>
+                    <p>DIPLOMA</p>            
+                </div>                
+               
+                  <div id="diploma-details-2" class="diploma-details">
+                    <strong>COMPUTER PROGRAMMING</strong> <br>           
+                    <strong>SENECA COLLEGE</strong>
+                    <P>Worked in many different industrial projects <br>Awarded with many scholarships</P>
+                  </div>
+            </div>
+            
+    </div>
+
+<!--feedback form-->
+    <form id="feedback-form" action=" https://httpbin.org/post" method="post">
+        
+        <label for="name"><span class="asterisk">*</span>Name</label>
+        <input 
+        id="name" 
+        name="name"
+        autocomplete="name"
+        type="text"
+        placeholder="fullname"
+        tabindex="1"
+        required
+          >
+
+          <label for="email"><span class="asterisk">*</span>Email</label>
+        <input 
+        id="email" 
+        name="email"
+        autocomplete="email"        
+        type="email"
+        placeholder="username@example.com"
+        tabindex="2"
+        required
+          >
+
+          <label for="address"><span class="asterisk">*</span>Address</label>
+        <input 
+        id="address" 
+        name="address"
+        autocomplete="address-level1"        
+        type="text"
+        tabindex="3"
+        required
+          >
+
+
+          <label for="city"><span class="asterisk">*</span>City</label>
+        <input 
+        id="city" 
+        name="city"
+        type="text"
+        tabindex="4"
+        list="list-city"
+        autocomplete="off"      
+        required  
+          >
+          <datalist id="list-city">
+            <option value="Toronto"></option>
+            <option value="Quebec City"></option>
+            <option value="Vancouver"></option>
+            <option value="Calgary"></option>
+            <option value="Ottawa"></option>
+            <option value="Montreal"></option>
+            <option value="Victoria"></option>
+            <option value="St. John's"></option>
+            <option value="Victoria"></option>
+            <option value="Charlottetown"></option>
+            <option value="Saskatoon"></option>
+            <option value="Halifax"></option>
+            <option value="Whitehorse"></option>
+            <option value="Winnipeg"></option>
+            <option value="Banff"></option>
+            <option value="Thunder Bay"></option>            
+          </datalist>
+
+          <label for="postal-code"><span class="asterisk">*</span>Postal Code</label>
+          <input 
+          id="postal-code"
+          name="postal-code"
+          autocomplete="postal-code"
+          type="text"
+          tabindex="5"
+          required
+          placeholder="M1M 2S3 or M1M2S3"
+          pattern="^[A-Za-z]\d[A-Za-z][ ]?\d[A-Za-z]\d$">
+
+
+          <label>Relevance:</label>
+          <div id="radio-buttons">
+            
+          <input
+                id="question"
+                type="radio"
+                name="option"
+                value="question"
+                checked
+            />
+              <label for="question"
+                >Question</label
+              >
+
+              <input
+              id="comment"
+              type="radio"
+              name="option"
+              value="comment"
+             />
+            <label for="comment"
+              >Comment</label
+            >
+            <input
+            id="hiring"
+            type="radio"
+            name="option"
+            value="hiring"
+            />
+            <label for="hiring"
+            >Hiring</label
+            >
+        </div>
+        
+        <!-- Because there are only two elements we can make them hidden
+            If there were many elements to be added depending on user-input then dynamically create elements and append it
+        -->
+            <label id="label-hourly-rate" for="hourly-rate" hidden><span class="asterisk">*</span>Hourly-rate</label>
+            <input     
+            hidden        
+            id="hourly-rate"
+            type="text"
+            name="hourly-rate"
+            placeholder="$50"
+            pattern = '^\$\d+';
+            required
+            >
+           
+            
+          <textarea 
+          id="feedback-message" 
+          name="message" 
+          rows="5" 
+          tabindex="9" 
+          placeholder="type here"
+          ></textarea>
+       
+
+        <label for="user-contact">Your contact?</label>
+        <input 
+            id="user-contact"
+            name="user-contact"
+            autocomplete="off"
+            type="text"
+            tabindex="10"
+            placeholder="optional - email/phone/other"
+        >
+
+        <label for="file">Attachment</label>
+        <input 
+            id="file"
+            type="file"
+            name="file"
+            tabindex="11"
+            accept="image/png, image/jpeg, application/pdf,.docx,.doc"
+        >
+
+        <div class="formbuttons">
+         <input 
+          type="submit" 
+          name="submit" 
+          value="Submit" 
+          tabindex="12">
+
+        <input 
+          type="reset" 
+          name="reset" 
+          value="Reset" 
+          tabindex="13"
+          >
+
+        </div>
+    </form>
+
+    <script src="./script.js">  
+    </script>  
+</body>
+</html>
